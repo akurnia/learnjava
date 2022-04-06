@@ -1,6 +1,6 @@
 **Google Cloud Pub/Sub**
 
-What is Pub/Sub?
+**What is Pub/Sub?**
 
 Google Cloud Pub/Sub is a microservice provided by Google Cloud Platform. 
 Pub/Sub allows services to communicate asynchronously, with latencies on the order of 100 milliseconds.
@@ -8,7 +8,7 @@ Pub/Sub allows services to communicate asynchronously, with latencies on the ord
 Pub/Sub is used for streaming analytics and data integration pipelines to ingest and distribute data. It is equally effective as a messaging- oriented middleware for service integration or as a queue to parallelize tasks.
 
 
-How PUB/ SUB works?
+**How PUB/ SUB works?**
 
 As the name suggests, this data streaming procedure is based on mainly three parts: Publisher, topic and subscriber.
 
@@ -28,7 +28,7 @@ The key concepts in a Pub/Sub service:
     Publisher(also called a producer): creates messages and sends(publishes) them to the messaging service on a specified topic.
     Subscriber(also called a consumer): receives messages on a specified subscription.
 
-Google Cloud Pub/Sub Data flow
+**Google Cloud Pub/Sub Data flow**
 
 The following diagram is an overview of the components in the Pub/Sub and how messages flow between them:
     A publisher application creates a topic in the pub/sub service and sends a message to the topic. A message contains a payload and optional attributes that describe the payload content.
@@ -37,6 +37,7 @@ The following diagram is an overview of the components in the Pub/Sub and how me
     A subscriber receives messages either by Pub/Sub pushing them to the subscriber’s chosen endpoint or by the subscriber pulling them from the service.
     The subscriber sends an acknowledgment to the Pub/Sub service for each received message.
     The service removes acknowledged messages from the subscription’s message queue.
+    ![alt text](https://github.com/akurnia/learnjava/blob/master/image/pubsub_dataflow.png?raw=true)
 
 Publisher Application
 
